@@ -15,8 +15,8 @@ import com.hjc.hjcAPI.model.dto.userInterfaceInfo.UserInterfaceInfoAddRequest;
 
 import com.hjc.hjcAPI.model.dto.userInterfaceInfo.UserInterfaceInfoQueryRequest;
 import com.hjc.hjcAPI.model.dto.userInterfaceInfo.UserInterfaceInfoUpdateRequest;
-import com.hjc.hjcAPI.model.entity.UserInterfaceInfo;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.UserInterfaceInfo;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.model.enums.InterfaceInfostatusEnum;
 import com.hjc.hjcAPI.service.UserInterfaceInfoService;
 import com.hjc.hjcAPI.service.UserService;

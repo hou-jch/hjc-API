@@ -1,7 +1,7 @@
 package com.hjc.hjcAPI.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.hjc.hjcAPI.model.entity.InterfaceInfo;
+import com.hjc.hjccommon.model.entity.InterfaceInfo;
 
 
 /**

@@ -3,7 +3,7 @@ package com.hjc.hjcAPI.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.hjc.hjcAPI.model.dto.user.UserQueryRequest;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.model.vo.LoginUserVO;
 import com.hjc.hjcAPI.model.vo.UserVO;
 import java.util.List;

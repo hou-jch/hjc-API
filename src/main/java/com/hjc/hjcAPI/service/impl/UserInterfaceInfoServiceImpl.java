@@ -6,13 +6,9 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hjc.hjcAPI.common.ErrorCode;
 import com.hjc.hjcAPI.exception.BusinessException;
 import com.hjc.hjcAPI.mapper.UserInterfaceInfoMapper;
-import com.hjc.hjcAPI.model.entity.InterfaceInfo;
-import com.hjc.hjcAPI.model.entity.UserInterfaceInfo;
+import com.hjc.hjccommon.model.entity.UserInterfaceInfo;
 import com.hjc.hjcAPI.service.UserInterfaceInfoService;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
-
-import java.util.Date;
 
 /**
 * @author hou-jch

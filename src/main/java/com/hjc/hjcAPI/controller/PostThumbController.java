@@ -5,7 +5,7 @@ import com.hjc.hjcAPI.common.ErrorCode;
 import com.hjc.hjcAPI.common.ResultUtils;
 import com.hjc.hjcAPI.exception.BusinessException;
 import com.hjc.hjcAPI.model.dto.postthumb.PostThumbAddRequest;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.service.PostThumbService;
 import com.hjc.hjcAPI.service.UserService;
 import javax.annotation.Resource;

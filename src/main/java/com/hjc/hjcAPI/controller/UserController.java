@@ -16,7 +16,7 @@ import com.hjc.hjcAPI.model.dto.user.UserQueryRequest;
 import com.hjc.hjcAPI.model.dto.user.UserRegisterRequest;
 import com.hjc.hjcAPI.model.dto.user.UserUpdateMyRequest;
 import com.hjc.hjcAPI.model.dto.user.UserUpdateRequest;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.model.vo.LoginUserVO;
 import com.hjc.hjcAPI.model.vo.UserVO;
 import com.hjc.hjcAPI.service.UserService;

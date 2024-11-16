@@ -1,6 +1,6 @@
 package com.hjc.hjcAPI.service;
 
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import javax.annotation.Resource;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;

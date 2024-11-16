@@ -1,7 +1,7 @@
 package com.hjc.hjcAPI.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 
 /**
  * 用户数据库操作

@@ -15,7 +15,7 @@ import com.hjc.hjcAPI.model.dto.post.PostQueryRequest;
 import com.hjc.hjcAPI.model.entity.Post;
 import com.hjc.hjcAPI.model.entity.PostFavour;
 import com.hjc.hjcAPI.model.entity.PostThumb;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.model.vo.PostVO;
 import com.hjc.hjcAPI.model.vo.UserVO;
 import com.hjc.hjcAPI.service.PostService;

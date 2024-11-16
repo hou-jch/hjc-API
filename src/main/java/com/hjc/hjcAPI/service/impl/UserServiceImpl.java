@@ -12,7 +12,7 @@ import com.hjc.hjcAPI.constant.CommonConstant;
 import com.hjc.hjcAPI.exception.BusinessException;
 import com.hjc.hjcAPI.mapper.UserMapper;
 import com.hjc.hjcAPI.model.dto.user.UserQueryRequest;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.model.enums.UserRoleEnum;
 import com.hjc.hjcAPI.model.vo.LoginUserVO;
 import com.hjc.hjcAPI.model.vo.UserVO;

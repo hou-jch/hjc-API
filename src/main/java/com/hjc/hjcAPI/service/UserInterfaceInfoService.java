@@ -1,8 +1,7 @@
 package com.hjc.hjcAPI.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.hjc.hjcAPI.model.entity.InterfaceInfo;
-import com.hjc.hjcAPI.model.entity.UserInterfaceInfo;
+import com.hjc.hjccommon.model.entity.UserInterfaceInfo;
 
 
 /**

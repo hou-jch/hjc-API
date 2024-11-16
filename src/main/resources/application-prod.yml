@@ -8,21 +8,21 @@ spring:
   # todo 需替换配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.10.107:3306/hjc-api
+    url: jdbc:mysql://ubantu.aidushuf.asia:3306/hjc-api
     username: hjc-API
     password: w5JBCSFFGjhY3erC
   # Redis 配置
   # todo 需替换配置
   redis:
     database: 1
-    host: 192.168.10.107
+    host: ubantu.aidushuf.asia
     port: 6379
     timeout: 5000
     password: bPnP7c3yAaBymaE2
   # Elasticsearch 配置
   # todo 需替换配置
   elasticsearch:
-    uris: 192.168.10.107:9200
+    uris: ubantu.aidushuf.asia:9200
     username: elastic
     password: Cp_tdebFg=y+olKvev6C
 mybatis-plus:
@@ -39,3 +39,20 @@ houapi:
   client:
     access-key: qwe123
     secret-key: qwe456
+# 以下配置指定了应用的名称、使用的协议（Dubbo）、注册中心的类型（Nacos）和地址
+dubbo:
+  application:
+    # 设置应用的名称
+    name: dubbo-springboot-demo-provider
+  # 指定使用 Dubbo 协议，且端口设置为 -1，表示随机分配可用端口
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    # 配置注册中心为 Nacos，使用的地址是 nacos://localhost:8848
+    id: nacos-registry
+    address: nacos://win.aidushuf.asia:8848
+interface:
+  gateway:
+    gateway-host: 127.0.0.1
+    gateway-port: 8090

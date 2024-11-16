@@ -2,7 +2,7 @@ package com.hjc.hjcAPI.service;
 
 import com.hjc.hjcAPI.model.entity.PostThumb;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 
 /**
  * 帖子点赞服务

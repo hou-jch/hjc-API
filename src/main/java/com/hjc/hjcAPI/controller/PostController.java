@@ -15,7 +15,7 @@ import com.hjc.hjcAPI.model.dto.post.PostEditRequest;
 import com.hjc.hjcAPI.model.dto.post.PostQueryRequest;
 import com.hjc.hjcAPI.model.dto.post.PostUpdateRequest;
 import com.hjc.hjcAPI.model.entity.Post;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.model.vo.PostVO;
 import com.hjc.hjcAPI.service.PostService;
 import com.hjc.hjcAPI.service.UserService;

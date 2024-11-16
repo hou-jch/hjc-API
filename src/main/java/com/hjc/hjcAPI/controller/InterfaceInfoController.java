@@ -15,8 +15,8 @@ import com.hjc.hjcAPI.model.dto.interfaceInfo.InterfaceInfoAddRequest;
 import com.hjc.hjcAPI.model.dto.interfaceInfo.InterfaceInfoInvokeRequest;
 import com.hjc.hjcAPI.model.dto.interfaceInfo.InterfaceInfoQueryRequest;
 import com.hjc.hjcAPI.model.dto.interfaceInfo.InterfaceInfoUpdateRequest;
-import com.hjc.hjcAPI.model.entity.InterfaceInfo;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.InterfaceInfo;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.model.enums.InterfaceInfostatusEnum;
 import com.hjc.hjcAPI.service.InterfaceInfoService;
 import com.hjc.hjcAPI.service.UserService;
@@ -191,36 +191,19 @@ public class InterfaceInfoController {
         return ResultUtils.success(result);
     }
     /**
-     * 下线接口
+     * 调用接口
      *
      * @return
      */
     @PostMapping("/invoke")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
-    public BaseResponse<String> invokeInterfaceInfo(@RequestBody InterfaceInfoInvokeRequest interfaceInfoInvokeRequest,HttpServletRequest request) {
+    public BaseResponse<Object> invokeInterfaceInfo(@RequestBody InterfaceInfoInvokeRequest interfaceInfoInvokeRequest,HttpServletRequest request) {
         if (interfaceInfoInvokeRequest == null || interfaceInfoInvokeRequest.getId() <= 0) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
-        //获取id
-        Long id = interfaceInfoInvokeRequest.getId();
-        //获取请求参数
-        String userRequestParams = interfaceInfoInvokeRequest.getUserRequestParams();
-        InterfaceInfo oldInterfaceInfo = interfaceInfoService.getById(id);
-        ThrowUtils.throwIf(oldInterfaceInfo == null, ErrorCode.NOT_FOUND_ERROR);
-        Integer status = oldInterfaceInfo.getStatus();
-        if(status == InterfaceInfostatusEnum.OFFONLINE.getValue()){
-            throw new BusinessException(ErrorCode.PARAMS_ERROR,"接口已下线");
-        }
-        //使用当前用户登录的密钥去调用接口
-        User loginUser = userService.getLoginUser(request);
-        String accessKey = loginUser.getAccessKey();
-        String secretKey = loginUser.getSecretKey();
-        HouApiClient houApiClienByMy = new HouApiClient(secretKey,accessKey);
-        Gson gson = new Gson();
-        com.hjc.hjjcclientsdk.model.User user = gson.fromJson(userRequestParams, com.hjc.hjjcclientsdk.model.User.class);
-        String userNameByPost = houApiClienByMy.getUserNameByPost(user);
+        Object result =  interfaceInfoService.invoke(interfaceInfoInvokeRequest, request);
 
-        return ResultUtils.success(userNameByPost);
+        return ResultUtils.success(result);
     }
     /**
      * 分页获取列表（仅管理员）

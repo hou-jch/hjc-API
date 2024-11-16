@@ -7,7 +7,7 @@ import com.hjc.hjcAPI.exception.BusinessException;
 import com.hjc.hjcAPI.mapper.PostThumbMapper;
 import com.hjc.hjcAPI.model.entity.Post;
 import com.hjc.hjcAPI.model.entity.PostThumb;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.service.PostService;
 import com.hjc.hjcAPI.service.PostThumbService;
 import javax.annotation.Resource;

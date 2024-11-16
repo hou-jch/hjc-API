@@ -10,7 +10,7 @@ import com.hjc.hjcAPI.exception.BusinessException;
 import com.hjc.hjcAPI.mapper.PostFavourMapper;
 import com.hjc.hjcAPI.model.entity.Post;
 import com.hjc.hjcAPI.model.entity.PostFavour;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.service.PostFavourService;
 import com.hjc.hjcAPI.service.PostService;
 import javax.annotation.Resource;

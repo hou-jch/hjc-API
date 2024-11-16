@@ -3,7 +3,7 @@ package com.hjc.hjcAPI.aop;
 import com.hjc.hjcAPI.annotation.AuthCheck;
 import com.hjc.hjcAPI.common.ErrorCode;
 import com.hjc.hjcAPI.exception.BusinessException;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.model.enums.UserRoleEnum;
 import com.hjc.hjcAPI.service.UserService;
 import org.aspectj.lang.ProceedingJoinPoint;

@@ -10,7 +10,7 @@ import com.hjc.hjcAPI.model.dto.post.PostQueryRequest;
 import com.hjc.hjcAPI.model.dto.postfavour.PostFavourAddRequest;
 import com.hjc.hjcAPI.model.dto.postfavour.PostFavourQueryRequest;
 import com.hjc.hjcAPI.model.entity.Post;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.model.vo.PostVO;
 import com.hjc.hjcAPI.service.PostFavourService;
 import com.hjc.hjcAPI.service.PostService;

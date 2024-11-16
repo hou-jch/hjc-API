@@ -8,7 +8,7 @@ import com.hjc.hjcAPI.constant.FileConstant;
 import com.hjc.hjcAPI.exception.BusinessException;
 import com.hjc.hjcAPI.manager.CosManager;
 import com.hjc.hjcAPI.model.dto.file.UploadFileRequest;
-import com.hjc.hjcAPI.model.entity.User;
+import com.hjc.hjccommon.model.entity.User;
 import com.hjc.hjcAPI.model.enums.FileUploadBizEnum;
 import com.hjc.hjcAPI.service.UserService;
 import java.io.File;
